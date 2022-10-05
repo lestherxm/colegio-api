@@ -22,6 +22,3 @@ services:
       - "80:80"
     depends_on:
       - postgres
-
-# Run Docker Desktop and make sure that any other container is running. 
-# Run in terminal in the currently path -> docker-compose up
