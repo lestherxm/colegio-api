@@ -1,19 +1,30 @@
 # API Colegio
 
-## Testear la API
-### * Clonar el repositorio mediante el comando `git clone`
-### * Ejecuta el comando `npm i` para instalar las dependencias
+## ¿Cómo probar la API?
 
-## Docker Desktop
-### * Inicializa Docker Desktop y asegurate de que ningun otro contenedor esté corriendo para evitar problemas con los puertos.
-### * Si es la primera vez testeando la API, ejecuta en la carpeta raíz el comando `docker-compose up` para crear el container.
-### * Una vez ya tengas un contenedor asociado al proyecto, simplemente levanta ambos servicios (`postgres` y `pgadmin`)
-### * Inicia sesion con las credenciales del archivo `docker-compose.yml` en `pgadmin` (en el navegador)
-### * Crea una conexion para el usuario root
-### * ¿Ayuda? Docker y PostgreSQL -> https://youtu.be/uKlRp6CqpDg?t=576
+#### - Clona el repositorio 
+```
+    git clone https://github.com/lestherxm/colegio-api.git 
+```
+#### - Instala las dependencias
+```
+    npm install
+```
+### - Inicializa `Docker Desktop`
+### - Asegúrate de que ningún otro contenedor esté corriendo para evitar problemas con los puertos.
+### - Si ya tienes el contenedor para el proyecto, asegúrate de que ambos servicios estén corriendo (`postgres` y `pgadmin`)
+#### - Caso contrario, crea el contenedor para el proyecto ejecutando en la carpeta raiz
+```
+    docker-compose up
+```
+#### - Inicia sesión con las credenciales del archivo `docker-compose.yml` en `pgadmin` (en el navegador)
+#### - Crea una conexion para el usuario root - ¿Ayuda con esto? [Ver este video].[https://youtu.be/uKlRp6CqpDg?t=576]
 
 ## Finalmente
-### * Ejecuta el comando `node server.js` para correr el servidor
-### * Utiliza alguna herramienta para testear los `endpoints` (postman, por ejemplo)
+### - Inicializa el servidor
+```
+    npm start
+```
+### - Utiliza alguna herramienta para testear los `API endpoints` (Postman, Thunder Client, etc)
 
 
