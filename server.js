@@ -35,7 +35,9 @@ app.get("/", (req, res) => {
   res.json({ message: "<<CEBE (Colegio el Buen Estudiante) API>>" });
 });
 
-/* Pon las rutas que vas creando aca*/
+/**
+ * TODO: Acá se deben poner los enlaces a las rutas/enpoints
+ */
 require('./app/routes/persona.routes.js')(app);
 
 // set port, listen for requests

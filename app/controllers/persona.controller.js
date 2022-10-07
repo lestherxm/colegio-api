@@ -1,5 +1,5 @@
 const db = require("../models");
-const Persona = db.personas;
+const Persona = db.personas; // Viene del archivo ../models/index.js
 const Op = db.Sequelize.Op;
 
 // Create and Save a new @Persona
