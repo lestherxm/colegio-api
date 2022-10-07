@@ -18,9 +18,6 @@ const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
-/**
- *? Especificar las rutas hacia los modelos aquí
- */
-db.cursos = requiere('./curso.model.js')(sequelize, Sequelize);
+db.personas = require("./persona.model.js")(sequelize, Sequelize);
 
 module.exports = db;

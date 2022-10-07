@@ -4,7 +4,7 @@
   "description": "Node.js Rest Apis with Express, Sequelize & PostgreSQL",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "keywords": [
     "nodejs",
@@ -15,7 +15,7 @@
     "postgresql"
   ],
   "author": "Jazzmin, Mariana & Lesther",
-  "license": "ISC",
+  "license": "GNU-GPLv3",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",

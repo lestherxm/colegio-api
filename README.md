@@ -6,10 +6,11 @@
 
 ## Docker Desktop
 ### * Inicializa Docker Desktop y asegurate de que ningun otro contenedor esté corriendo para evitar problemas con los puertos.
-### * Si es la primera vez testeando la API, ejecuta en la carpeta raíz el comando `docker-compose up`
+### * Si es la primera vez testeando la API, ejecuta en la carpeta raíz el comando `docker-compose up` para crear el container.
+### * Una vez ya tengas un contenedor asociado al proyecto, simplemente levanta ambos servicios (`postgres` y `pgadmin`)
 ### * Inicia sesion con las credenciales del archivo `docker-compose.yml` en `pgadmin` (en el navegador)
 ### * Crea una conexion para el usuario root
-### * Docker y PostgreSQL -> https://youtu.be/uKlRp6CqpDg 
+### * ¿Ayuda? Docker y PostgreSQL -> https://youtu.be/uKlRp6CqpDg 
 
 ## Finalmente
 ### * Ejecuta el comando `node server.js` para correr el servidor
