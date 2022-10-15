@@ -1,5 +1,6 @@
 const dbConfig = require("../config/db.config.js");
 
+// https://catalins.tech/nodejs-postgresql-heroku-error-no-pghbaconf-entry-for-host-ssl-off
 const Sequelize = require("sequelize");
 const sequelize = new Sequelize(
   dbConfig.DB, 
