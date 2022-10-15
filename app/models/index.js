@@ -19,9 +19,13 @@ db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
 /**
- * TODO: Acá se deben poner el enlace a los modelos
+ * TODO: Acá se deben poner las rutas hacia los modelos
  */
 
 db.personas = require("./persona.model.js")(sequelize, Sequelize);
+db.grados = require("./grado.model.js")(sequelize, Sequelize);
+db.grupos = require("./grupo.model.js")(sequelize, Sequelize);
+db.roles = require("./rol.model.js")(sequelize, Sequelize);
+db.secciones = require("./seccion.model.js")(sequelize, Sequelize);
 
 module.exports = db;

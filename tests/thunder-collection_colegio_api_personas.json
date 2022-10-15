@@ -1,0 +1,117 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "colegio_api_personas",
+    "dateExported": "2022-10-15T03:41:55.112Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "94000f7d-e5c8-4e62-b8d1-a2418d6a8c52",
+            "colId": "266f0b67-b67a-4d99-a2cb-9ed416dc7b0f",
+            "containerId": "",
+            "name": "create",
+            "url": "http://localhost:8080/colegio/personas",
+            "method": "POST",
+            "sortNum": 5000,
+            "created": "2022-10-07T04:42:19.179Z",
+            "modified": "2022-10-07T06:21:14.246Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"cui\": \"delete\",\n    \"correo\": \"delete@gmail.com\",\n    \"nombres\": \"delete delete\",\n    \"apellidos\": \"delete delete\",\n    \"celular\": \"delete\",\n    \"direccion\": \"6ta Calle Zona 54 Guatemala\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "344df37e-cfb1-4d84-9dc9-dd4eb4eda2e8",
+            "colId": "266f0b67-b67a-4d99-a2cb-9ed416dc7b0f",
+            "containerId": "",
+            "name": "findAll",
+            "url": "http://localhost:8080/colegio/personas",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2022-10-07T04:38:59.646Z",
+            "modified": "2022-10-07T04:38:59.646Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "05f31549-f30f-402a-a424-55b0edeae0dc",
+            "colId": "266f0b67-b67a-4d99-a2cb-9ed416dc7b0f",
+            "containerId": "",
+            "name": "updateByCui",
+            "url": "http://localhost:8080/colegio/personas/delete",
+            "method": "PUT",
+            "sortNum": 12500,
+            "created": "2022-10-07T05:26:36.500Z",
+            "modified": "2022-10-07T06:23:45.091Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"cui\": \"delete\",\n    \"correo\": \"delete@gmail.com\",\n    \"nombres\": \"delete delete\",\n    \"apellidos\": \"delete delete\",\n    \"celular\": \"delete\",\n    \"direccion\": \"6ta Calle Zona 54 Guatemala\",\n    \"active\": false\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4c4ef93f-0cf2-45e6-9e43-2f074738ff34",
+            "colId": "266f0b67-b67a-4d99-a2cb-9ed416dc7b0f",
+            "containerId": "",
+            "name": "findAllActivated",
+            "url": "http://localhost:8080/colegio/personas/activated",
+            "method": "GET",
+            "sortNum": 15000,
+            "created": "2022-10-07T04:58:52.326Z",
+            "modified": "2022-10-07T06:22:54.858Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f33a2dc9-2c60-4f3d-81c9-2cad56468d95",
+            "colId": "266f0b67-b67a-4d99-a2cb-9ed416dc7b0f",
+            "containerId": "",
+            "name": "findAllDectivated",
+            "url": "http://localhost:8080/colegio/personas/deactivated",
+            "method": "GET",
+            "sortNum": 17500,
+            "created": "2022-10-07T05:56:04.112Z",
+            "modified": "2022-10-07T06:22:57.031Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e838c64b-a5eb-47d9-bb68-610cb67dd260",
+            "colId": "266f0b67-b67a-4d99-a2cb-9ed416dc7b0f",
+            "containerId": "",
+            "name": "finOneByCui",
+            "url": "http://localhost:8080/colegio/personas/2123456789",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2022-10-07T05:16:57.571Z",
+            "modified": "2022-10-07T06:24:31.611Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9742495d-4620-4550-994d-faac3a8c2d7c",
+            "colId": "266f0b67-b67a-4d99-a2cb-9ed416dc7b0f",
+            "containerId": "",
+            "name": "deleteByCui",
+            "url": "http://localhost:8080/colegio/personas/delete",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2022-10-07T05:41:13.837Z",
+            "modified": "2022-10-07T06:24:39.674Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
