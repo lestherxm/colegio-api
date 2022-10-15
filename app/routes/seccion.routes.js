@@ -10,13 +10,13 @@ module.exports = app => {
     router.get("/", seccion.findAll);
     
     // Retrieve a single @Seccion with id
-    router.get("/:id", seccion.findOne);
+    router.get("/:id_seccion", seccion.findOne);
     
     // Update a @Seccion with id
-    router.put("/:id", seccion.update);
+    router.put("/:id_seccion", seccion.update);
     
     // Delete a @Seccion with id
-    router.delete("/:id", seccion.delete);
+    router.delete("/:id_seccion", seccion.delete);
     
     app.use("/secciones", router);
 };

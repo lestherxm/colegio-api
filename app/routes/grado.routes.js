@@ -10,13 +10,13 @@ module.exports = app => {
     router.get("/", grado.findAll);
     
     // Retrieve a single @Grado with id
-    router.get("/:id", grado.findOne);
+    router.get("/:id_grado", grado.findOne);
     
     // Update a @Grado with id
-    router.put("/:id", grado.update);
+    router.put("/:id_grado", grado.update);
     
     // Delete a @Grado with id
-    router.delete("/:id", grado.delete);
+    router.delete("/:id_grado", grado.delete);
     
     app.use("/grados", router);
 };

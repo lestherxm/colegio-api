@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "colegio_api_personas",
-    "dateExported": "2022-10-15T03:41:55.112Z",
+    "dateExported": "2022-10-15T09:50:30.957Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -10,16 +10,16 @@
             "colId": "266f0b67-b67a-4d99-a2cb-9ed416dc7b0f",
             "containerId": "",
             "name": "create",
-            "url": "http://localhost:8080/colegio/personas",
+            "url": "http://localhost:8080/personas/",
             "method": "POST",
             "sortNum": 5000,
             "created": "2022-10-07T04:42:19.179Z",
-            "modified": "2022-10-07T06:21:14.246Z",
+            "modified": "2022-10-15T09:24:59.452Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n    \"cui\": \"delete\",\n    \"correo\": \"delete@gmail.com\",\n    \"nombres\": \"delete delete\",\n    \"apellidos\": \"delete delete\",\n    \"celular\": \"delete\",\n    \"direccion\": \"6ta Calle Zona 54 Guatemala\"\n}",
+                "raw": "{\n    \"cui\": \"1234567812345\",\n    \"correo\": \"email-1@example.com\",\n    \"nombres\": \"Juan Pedro\",\n    \"apellidos\": \"Smith Segundo\",\n    \"celular\": \"12345678\",\n    \"direccion\": \"6ta Calle Zona 154 Guatemala\"\n}",
                 "form": []
             },
             "tests": []
@@ -29,11 +29,11 @@
             "colId": "266f0b67-b67a-4d99-a2cb-9ed416dc7b0f",
             "containerId": "",
             "name": "findAll",
-            "url": "http://localhost:8080/colegio/personas",
+            "url": "http://localhost:8080/personas/",
             "method": "GET",
             "sortNum": 10000,
             "created": "2022-10-07T04:38:59.646Z",
-            "modified": "2022-10-07T04:38:59.646Z",
+            "modified": "2022-10-15T09:02:24.294Z",
             "headers": [],
             "params": [],
             "tests": []
@@ -43,16 +43,16 @@
             "colId": "266f0b67-b67a-4d99-a2cb-9ed416dc7b0f",
             "containerId": "",
             "name": "updateByCui",
-            "url": "http://localhost:8080/colegio/personas/delete",
+            "url": "http://localhost:8080/personas/delete",
             "method": "PUT",
             "sortNum": 12500,
             "created": "2022-10-07T05:26:36.500Z",
-            "modified": "2022-10-07T06:23:45.091Z",
+            "modified": "2022-10-15T09:24:35.170Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n    \"cui\": \"delete\",\n    \"correo\": \"delete@gmail.com\",\n    \"nombres\": \"delete delete\",\n    \"apellidos\": \"delete delete\",\n    \"celular\": \"delete\",\n    \"direccion\": \"6ta Calle Zona 54 Guatemala\",\n    \"active\": false\n}",
+                "raw": "{\n    \"cui\": \"1234567812345\",\n    \"correo\": \"email-1@example.com\",\n    \"nombres\": \"Juan Pedro\",\n    \"apellidos\": \"Smith Segundo\",\n    \"celular\": \"12345678\",\n    \"direccion\": \"6ta Calle Zona 154 Guatemala\",\n    \"active\": false\n}",
                 "form": []
             },
             "tests": []
@@ -62,11 +62,11 @@
             "colId": "266f0b67-b67a-4d99-a2cb-9ed416dc7b0f",
             "containerId": "",
             "name": "findAllActivated",
-            "url": "http://localhost:8080/colegio/personas/activated",
+            "url": "http://localhost:8080/personas/activated",
             "method": "GET",
             "sortNum": 15000,
             "created": "2022-10-07T04:58:52.326Z",
-            "modified": "2022-10-07T06:22:54.858Z",
+            "modified": "2022-10-15T08:55:11.827Z",
             "headers": [],
             "params": [],
             "tests": []
@@ -76,11 +76,11 @@
             "colId": "266f0b67-b67a-4d99-a2cb-9ed416dc7b0f",
             "containerId": "",
             "name": "findAllDectivated",
-            "url": "http://localhost:8080/colegio/personas/deactivated",
+            "url": "http://localhost:8080/personas/deactivated",
             "method": "GET",
             "sortNum": 17500,
             "created": "2022-10-07T05:56:04.112Z",
-            "modified": "2022-10-07T06:22:57.031Z",
+            "modified": "2022-10-15T08:55:15.161Z",
             "headers": [],
             "params": [],
             "tests": []
@@ -90,12 +90,23 @@
             "colId": "266f0b67-b67a-4d99-a2cb-9ed416dc7b0f",
             "containerId": "",
             "name": "finOneByCui",
-            "url": "http://localhost:8080/colegio/personas/2123456789",
+            "url": "http://localhost:8080/personas/inserte_cui",
             "method": "GET",
             "sortNum": 20000,
             "created": "2022-10-07T05:16:57.571Z",
-            "modified": "2022-10-07T06:24:31.611Z",
-            "headers": [],
+            "modified": "2022-10-15T09:20:37.247Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
             "params": [],
             "tests": []
         },
@@ -104,11 +115,11 @@
             "colId": "266f0b67-b67a-4d99-a2cb-9ed416dc7b0f",
             "containerId": "",
             "name": "deleteByCui",
-            "url": "http://localhost:8080/colegio/personas/delete",
+            "url": "http://localhost:8080/personas/delete1",
             "method": "DELETE",
             "sortNum": 60000,
             "created": "2022-10-07T05:41:13.837Z",
-            "modified": "2022-10-07T06:24:39.674Z",
+            "modified": "2022-10-15T09:21:14.394Z",
             "headers": [],
             "params": [],
             "tests": []

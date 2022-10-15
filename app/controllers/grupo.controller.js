@@ -14,7 +14,6 @@ exports.create = (req, res) => {
 
     // Creando @Grupo
     const grupo = {
-        ig_grupo: req.body.ig_grupo,
         nombre: req.body.nombre
     };
 
@@ -52,7 +51,7 @@ exports.findAll = (req, res) => {
 exports.findOne = (req, res) => {
     const id_grupo = req.params.id_grupo;
 
-    Grado.findByPk(id_grupo)
+    Grupo.findByPk(id_grupo)
         .then(data => {
             res.send(data);
         })

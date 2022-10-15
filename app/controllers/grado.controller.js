@@ -14,7 +14,6 @@ exports.create = (req, res) => {
 
   // Creando @Grado
   const grado = {
-    id_grado: req.body.id_grado,
     nombre: req.body.nombre
   };
 

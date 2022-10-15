@@ -41,7 +41,8 @@ module.exports = (sequelize, Sequelize) => {
 
         celular: {
             type: Sequelize.STRING,
-            allowNull: false
+            allowNull: false,
+            unique: true
         },
 
         telefono: {

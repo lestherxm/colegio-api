@@ -10,13 +10,13 @@ module.exports = app => {
     router.get("/", grupo.findAll);
     
     // Retrieve a single @Grupo with id
-    router.get("/:id", grupo.findOne);
+    router.get("/:id_grupo", grupo.findOne);
     
     // Update a @Grupo with id
-    router.put("/:id", grupo.update);
+    router.put("/:id_grupo", grupo.update);
     
     // Delete a @Grupo with id
-    router.delete("/:id", grupo.delete);
+    router.delete("/:id_grupo", grupo.delete);
     
     app.use("/grupos", router);
 };

@@ -10,13 +10,13 @@ module.exports = app => {
     router.get("/", rol.findAll);
     
     // Retrieve a single @Rol with its ID
-    router.get("/:id", rol.findOne);
+    router.get("/:id_rol", rol.findOne);
     
     // Update a @Rol with its ID
-    router.put("/:id", rol.update);
+    router.put("/:id_rol", rol.update);
     
     // Delete a @Rol with its ID
-    router.delete("/:id", rol.delete);
+    router.delete("/:id_rol", rol.delete);
     
     app.use("/roles", router);
 };

@@ -1,0 +1,89 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "colegio_api_roles",
+    "dateExported": "2022-10-15T09:51:34.405Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "b48eeaf1-d424-4fcd-890f-8bb602b6c4bd",
+            "colId": "d55463e0-ca41-4045-97fc-0403c0ac047e",
+            "containerId": "",
+            "name": "create",
+            "url": "http://localhost:8080/roles/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2022-10-15T09:36:46.278Z",
+            "modified": "2022-10-15T09:43:06.265Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"Rol 1\",\n  \"descripcion\":\"Descripcion 1\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7669b422-8c2e-46f8-bccc-1d4825c942e9",
+            "colId": "d55463e0-ca41-4045-97fc-0403c0ac047e",
+            "containerId": "",
+            "name": "findAll",
+            "url": "http://localhost:8080/roles/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2022-10-15T09:38:52.506Z",
+            "modified": "2022-10-15T09:38:56.775Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "dc4758c3-ec2b-4baf-9f02-c2912355fedc",
+            "colId": "d55463e0-ca41-4045-97fc-0403c0ac047e",
+            "containerId": "",
+            "name": "findOne",
+            "url": "http://localhost:8080/roles/6",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2022-10-15T09:39:10.494Z",
+            "modified": "2022-10-15T09:41:50.215Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "52e7fedc-9124-43ed-8e27-050d05f966c8",
+            "colId": "d55463e0-ca41-4045-97fc-0403c0ac047e",
+            "containerId": "",
+            "name": "update",
+            "url": "http://localhost:8080/roles/6",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2022-10-15T09:40:22.047Z",
+            "modified": "2022-10-15T09:43:14.827Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"Rol 1 up\",\n  \"descripcion\": \"Descripcion 1 up\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c70466bd-0950-46de-8114-b8ae35f0eaec",
+            "colId": "d55463e0-ca41-4045-97fc-0403c0ac047e",
+            "containerId": "",
+            "name": "delete",
+            "url": "http://localhost:8080/roles/1",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2022-10-15T09:40:27.347Z",
+            "modified": "2022-10-15T09:43:18.512Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

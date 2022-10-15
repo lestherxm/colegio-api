@@ -1,0 +1,89 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "colegio_api_grupos",
+    "dateExported": "2022-10-15T09:51:40.588Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "95db43f3-7d8b-462c-96cb-8ed1590eb536",
+            "colId": "5edce349-4097-4c65-97b1-6af11857e7ea",
+            "containerId": "",
+            "name": "create",
+            "url": "http://localhost:8080/grupos/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2022-10-15T09:44:16.625Z",
+            "modified": "2022-10-15T09:48:18.830Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Bachillerato en Computacion 3\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b2b8b0e6-cf49-4624-adf4-f201d753e4ab",
+            "colId": "5edce349-4097-4c65-97b1-6af11857e7ea",
+            "containerId": "",
+            "name": "findAll",
+            "url": "http://localhost:8080/grupos/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2022-10-15T09:44:26.592Z",
+            "modified": "2022-10-15T09:47:58.845Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "67c338b0-5ba7-42ad-ad14-ba44aaf114da",
+            "colId": "5edce349-4097-4c65-97b1-6af11857e7ea",
+            "containerId": "",
+            "name": "findOne",
+            "url": "http://localhost:8080/grupos/1",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2022-10-15T09:44:33.545Z",
+            "modified": "2022-10-15T09:49:22.763Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6a8ed15c-95dd-427d-8938-91dd6755caf1",
+            "colId": "5edce349-4097-4c65-97b1-6af11857e7ea",
+            "containerId": "",
+            "name": "update",
+            "url": "http://localhost:8080/grupos/1",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2022-10-15T09:44:41.500Z",
+            "modified": "2022-10-15T09:50:02.042Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Bachillerato en Computacion 3 up\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d64a9c5e-6ef4-4725-ba71-257b2ff9b5a1",
+            "colId": "5edce349-4097-4c65-97b1-6af11857e7ea",
+            "containerId": "",
+            "name": "delete",
+            "url": "http://localhost:8080/grupos/1",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2022-10-15T09:44:44.735Z",
+            "modified": "2022-10-15T09:50:07.020Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

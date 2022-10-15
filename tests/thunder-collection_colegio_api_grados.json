@@ -1,0 +1,89 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "colegio_api_grados",
+    "dateExported": "2022-10-15T09:50:58.427Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "cdc3bb8f-1a49-4dd0-a161-b33178090207",
+            "colId": "450afb09-3742-41cd-a78e-1886d150f1d8",
+            "containerId": "",
+            "name": "create",
+            "url": "http://localhost:8080/grados/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2022-10-15T08:52:50.190Z",
+            "modified": "2022-10-15T09:03:49.889Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Tercero\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c8d01fab-caad-47f5-997f-32caff595c2b",
+            "colId": "450afb09-3742-41cd-a78e-1886d150f1d8",
+            "containerId": "",
+            "name": "findAll",
+            "url": "http://localhost:8080/grados",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2022-10-15T09:04:23.861Z",
+            "modified": "2022-10-15T09:05:17.328Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4d4b52ed-7260-45d9-bc06-0b9801a8ee41",
+            "colId": "450afb09-3742-41cd-a78e-1886d150f1d8",
+            "containerId": "",
+            "name": "FindOne",
+            "url": "http://localhost:8080/grados/1",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2022-10-15T09:04:34.786Z",
+            "modified": "2022-10-15T09:11:07.635Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9f7084b5-def0-4715-b587-7d555165e34f",
+            "colId": "450afb09-3742-41cd-a78e-1886d150f1d8",
+            "containerId": "",
+            "name": "update",
+            "url": "http://localhost:8080/grados/1",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2022-10-15T09:04:44.405Z",
+            "modified": "2022-10-15T09:10:59.979Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Primero act\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "25643fce-eaad-4845-b1bc-f3a563b478d3",
+            "colId": "450afb09-3742-41cd-a78e-1886d150f1d8",
+            "containerId": "",
+            "name": "delete",
+            "url": "http://localhost:8080/grados/3",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2022-10-15T09:04:49.068Z",
+            "modified": "2022-10-15T09:11:34.321Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

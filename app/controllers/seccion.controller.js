@@ -14,7 +14,6 @@ exports.create = (req, res) => {
 
     // Creando @Seccion
     const seccion = {
-        id_seccion: req.body.id_seccion,
         nombre: req.body.nombre
     };
 
