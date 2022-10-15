@@ -39,6 +39,11 @@ app.get("/", (req, res) => {
  * TODO: Acá se deben poner los enlaces a las rutas/enpoints
  */
 require('./app/routes/persona.routes.js')(app);
+require('./app/routes/grado.routes.js')(app);
+require('./app/routes/grupo.routes.js')(app);
+require('./app/routes/rol.routes.js')(app);
+require('./app/routes/seccion.routes.js')(app);
+
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
