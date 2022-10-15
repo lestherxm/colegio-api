@@ -27,5 +27,6 @@ db.grados = require("./grado.model.js")(sequelize, Sequelize);
 db.grupos = require("./grupo.model.js")(sequelize, Sequelize);
 db.roles = require("./rol.model.js")(sequelize, Sequelize);
 db.secciones = require("./seccion.model.js")(sequelize, Sequelize);
+db.anios = require("./anio.model.js")(sequelize, Sequelize);
 
 module.exports = db;
