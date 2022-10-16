@@ -1,9 +1,12 @@
+const { config } = require("dotenv");
+config();
+
 module.exports = {
-    DB: "dch55q12cc9h1v",
-    USER: "jbfamlnqtmghzp",
-    PASSWORD: "ff7d5f209ff1f93712aec89990c946df8407f16f2b4a0e813969e3df8667a6bd",
-    HOST: "ec2-44-196-174-238.compute-1.amazonaws.com",
-    dialect: "postgres",
+    DB: process.env.DB_NAME1 || process.env.DB_NAME2,
+    USER: process.env.DB_USER1 || process.env.DB_USER2,
+    PASSWORD: process.env.DB_PASSWORD1 || process.env.DB_PASSWORD2,
+    HOST: process.env.DB_HOST1 || process.env.DB_HOST2,
+    dialect: DB_DIALECT1 || DB_DIALECT2,
     pool: {
         max: 5,
         min: 0,
